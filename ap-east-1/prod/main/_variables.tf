@@ -18,11 +18,6 @@ variable "private_subnet_cidr" {
   type = list (string)
 }
 
-variable "mongodb_cidr" {
-  default = ["10.106.143.252/30", "10.106.159.252/30", "10.106.175.252/30"]
-  type = list (string)
-}
-
 variable "primary_az" {
   default = "ap-east-1a"
 }
