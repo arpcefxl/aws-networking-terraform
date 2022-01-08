@@ -14,10 +14,6 @@ output "vpc_private_route_table_ids" {
   value = module.vpc.private_route_table_ids
 }
 
-output "vpc_mongodb_cidr" {
-  value = var.mongodb_cidr
-}
-
 output "primary_az" {
   value = var.primary_az
 }
@@ -28,8 +24,4 @@ output "primary_subnet_id" {
 
 output "primary_nat_ip" {
   value = aws_eip.nat[0].public_ip
-}
-
-output "mavenproxy_private_ip" {
-  value = var.mavenproxy_private_ip
 }

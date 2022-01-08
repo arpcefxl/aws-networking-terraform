@@ -23,11 +23,6 @@ variable "mongodb_cidr" {
   type = list (string)
 }
 
-variable "mavenproxy_private_ip" {
-  default = "10.106.128.252"
-  type = string
-}
-
 variable "primary_az" {
   default = "ap-east-1a"
 }
