@@ -24,7 +24,7 @@ resource "aws_iam_instance_profile" "ec2_demo_instance_profile" {
   role = aws_iam_role.ec2_demo_iam_role.name
 }
 
-resource "aws_iam_role_policy_attachment" "uberads_ec2_stage_appcms_role_global_policy_attachment" {
+resource "aws_iam_role_policy_attachment" "ec2_demo_role_global_policy_attachment" {
   for_each = toset(var.policies_to_attach)
   role = aws_iam_role.ec2_demo_iam_role.name
   policy_arn = each.value
