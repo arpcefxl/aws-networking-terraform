@@ -2,6 +2,7 @@
 ## Deployment does require a specific order
 ## perform terraform init/plan/apply in these directories
 ## Required:
+#### global
 #### global/prod/main
 
 ### (any of the following three in any order)
